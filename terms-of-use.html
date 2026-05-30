@@ -1,98 +1,261 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena - Kullanım Şartları</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #1E293B;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 24px;
-            background-color: #F8FAFC;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(10, 17, 40, 0.04);
-            border: 1px solid #E2E8F0;
-        }
-        h1 {
-            color: #0A1128;
-            font-size: 28px;
-            font-weight: 800;
-            margin-top: 0;
-            border-bottom: 2px solid #2563EB;
-            padding-bottom: 12px;
-        }
-        h2 {
-            color: #0A1128;
-            font-size: 20px;
-            font-weight: 700;
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-        p, li {
-            font-size: 15px;
-            color: #475569;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .footer {
-            margin-top: 48px;
-            text-align: center;
-            font-size: 13px;
-            color: #94A3B8;
-            border-top: 1px solid #E2E8F0;
-            padding-top: 20px;
-        }
-        strong {
-            color: #0A1128;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena — Kullanım Şartları</title>
+  <style>
+    :root {
+      --navy: #0A1128;
+      --blue: #2563EB;
+      --text: #1E293B;
+      --muted: #475569;
+      --soft: #F8FAFC;
+      --border: #E2E8F0;
+      --card: #FFFFFF;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: linear-gradient(180deg, #F8FBFF 0%, #F8FAFC 48%, #EEF4FF 100%);
+      padding: 24px;
+    }
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+    .container {
+      background: var(--card);
+      padding: 44px;
+      border-radius: 24px;
+      box-shadow: 0 14px 40px rgba(10, 17, 40, 0.07);
+      border: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #EFF6FF;
+      color: #1D4ED8;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 850;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+    .updated {
+      color: #64748B;
+      font-size: 14px;
+      margin: 0 0 28px;
+    }
+    .intro {
+      font-size: 16px;
+      color: var(--muted);
+      margin: 0 0 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.35;
+      font-weight: 800;
+      margin: 34px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    p {
+      font-size: 15.5px;
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 18px;
+    }
+    li {
+      font-size: 15.5px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    strong {
+      color: var(--navy);
+      font-weight: 750;
+    }
+    a {
+      color: #1D4ED8;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .contact {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-top: 12px;
+    }
+    .footer {
+      margin-top: 44px;
+      text-align: center;
+      font-size: 13px;
+      color: #94A3B8;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+    @media (max-width: 640px) {
+      body {
+        padding: 14px;
+      }
+      .container {
+        padding: 26px 20px;
+        border-radius: 20px;
+      }
+      h1 {
+        font-size: 27px;
+      }
+      h2 {
+        font-size: 19px;
+      }
+      p,
+      li {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Arena - Kullanım Şartları</h1>
-        <p><strong>Son Güncelleme:</strong> 30 Mayıs 2026</p>
-        
-        <p><strong>Arena</strong> mobil uygulamasına hoş geldiniz. Bu Uygulamayı kullanarak, aşağıda belirtilen kullanım şartlarını ve kuralları peşinen kabul etmiş olursunuz. Şartları kabul etmiyorsanız lütfen Uygulamayı kullanmayınız.</p>
-
-        <h2>1. Hizmet Kullanımı ve Hesap Güvenliği</h2>
-        <ul>
-            <li>Uygulamayı kullanabilmek için kayıt olmanız ve şifrenizi güvenli tutmanız gerekmektedir.</li>
-            <li>Hesabınız üzerinden yapılan tüm işlemlerden kendiniz sorumlusunuz.</li>
-            <li>Başkasına ait hesapları izinsiz kullanamaz veya devredemezsiniz.</li>
-        </ul>
-
-        <h2>2. Kabul Edilebilir Kullanım ve Etik Kurallar</h2>
-        <p>Arena platformu öğrencilerin yardımlaşması ve etüt yapması için tasarlanmıştır. Bu doğrultuda:</p>
-        <ul>
-            <li>Liderlik tablolarını ve çalışma istatistiklerini manipüle etmeye yönelik hileli davranışlarda bulunamazsınız.</li>
-            <li>Uygulama içi soru havuzunda veya sosyal alanlarda hakaret, telif hakkı ihlali, müstehcenlik veya reklam içeren paylaşımlar yapamazsınız.</li>
-        </ul>
-
-        <h2>3. Hizmet Değişiklikleri ve Sorumluluk Sınırı</h2>
-        <p>Arena, uygulama özelliklerini dilediği zaman güncelleme, değiştirme veya geçici olarak askıya alma hakkını saklı tutar. Uygulamanın kullanımından doğabilecek dolaylı veri kayıplarından veya teknik aksaklıklardan Arena sorumlu tutulamaz.</p>
-
-        <h2>4. Sonlandırma ve Hesap Feshi</h2>
-        <p>Kullanım şartlarını veya topluluk kurallarını ihlal etmeniz durumunda, hesabınız geçici olarak askıya alınabilir veya kalıcı olarak sonlandırılabilir. Dilediğiniz zaman hesabınızı uygulama içinden kendiniz de kalıcı olarak silebilirsiniz.</p>
-
-        <h2>5. Değişiklikler</h2>
-        <p>Bu Kullanım Şartları zaman zaman güncellenebilir. Şartlar güncellendiğinde bu sayfa üzerinden yeni tarih belirtilerek yayınlanacaktır.</p>
-
-        <h2>6. İletişim</h2>
-        <p>Kullanım şartları ile ilgili tüm sorularınız için bizimle iletişime geçebilirsiniz:</p>
-        <p><strong>E-posta:</strong> destek@kertenkelebek.com</p>
-        
-        <div class="footer">
-            &copy; 2026 Arena - Tüm hakları saklıdır.
-        </div>
-    </div>
+  <main class="page">
+    <section class="container">
+      <div class="badge">📄 Kullanım Şartları</div>
+      <h1>Arena — Kullanım Şartları</h1>
+      <p class="updated"><strong>Son güncelleme:</strong> 30 Mayıs 2026</p>
+      <p class="intro">
+        Bu Kullanım Şartları, Arena mobil uygulamasını ("Uygulama") kullanırken uymanız gereken kuralları,
+        kullanıcı sorumluluklarını ve Arena tarafından sunulan hizmetlere ilişkin temel şartları açıklar.
+        Uygulamayı kullanarak bu şartlara uymayı kabul etmiş olursunuz.
+      </p>
+      <h2>1. Hizmetin amacı</h2>
+      <p>
+        Arena; öğrencilerin çalışma sürelerini takip etmesine, soru ve deneme performanslarını kaydetmesine,
+        hedeflerini yönetmesine, lig ve puan sistemleriyle motivasyonunu artırmasına yardımcı olmak amacıyla geliştirilmiş
+        bir eğitim ve çalışma takip uygulamasıdır.
+      </p>
+      <p>
+        Uygulama, sınav başarısını garanti etmez. Sunulan istatistikler, analizler, puanlar ve öneriler bilgilendirme
+        ve motivasyon amacı taşır.
+      </p>
+      <h2>2. Hesap oluşturma ve hesap güvenliği</h2>
+      <ul>
+        <li>Uygulamayı kullanabilmek için doğru ve güncel bilgilerle hesap oluşturmanız gerekebilir.</li>
+        <li>Hesabınızın güvenliğinden ve giriş bilgilerinizin gizliliğinden siz sorumlusunuz.</li>
+        <li>Hesabınız üzerinden yapılan işlemlerden siz sorumlusunuz.</li>
+        <li>Başkasına ait bir hesabı izinsiz kullanamaz, hesabınızı kötüye kullanamaz veya hesabınızı devredemezsiniz.</li>
+      </ul>
+      <h2>3. Kabul edilebilir kullanım kuralları</h2>
+      <p>
+        Arena, adil rekabeti, güvenli kullanımı ve öğrenciler arasında sağlıklı bir çalışma ortamını destekler.
+        Bu nedenle aşağıdaki davranışlar yasaktır:
+      </p>
+      <ul>
+        <li>Çalışma sürelerini, soru sayılarını, deneme netlerini, puanları veya liderlik tablosu sonuçlarını manipüle etmek.</li>
+        <li>Hile, bot, otomasyon, sahte veri girişi veya sistem açıklarından yararlanarak avantaj elde etmek.</li>
+        <li>Diğer kullanıcıları rahatsız edici, aşağılayıcı, tehdit edici, müstehcen, yanıltıcı veya reklam amaçlı içerikler paylaşmak.</li>
+        <li>Telif hakkı, marka hakkı veya üçüncü kişilerin haklarını ihlal eden içerikler yüklemek veya paylaşmak.</li>
+        <li>Uygulamanın güvenliğini, performansını veya işleyişini bozabilecek davranışlarda bulunmak.</li>
+      </ul>
+      <h2>4. Kullanıcı içerikleri ve sorumluluk</h2>
+      <p>
+        Uygulamada soru paylaşımı, not, yorum, profil bilgisi veya benzeri kullanıcı içerikleri sunuluyorsa,
+        paylaştığınız içeriklerden siz sorumlusunuz.
+      </p>
+      <p>
+        Arena; uygunsuz, hatalı, yanıltıcı, hak ihlali içeren veya topluluk kurallarına aykırı içerikleri kaldırma,
+        görünürlüğünü azaltma veya ilgili hesabı sınırlandırma hakkını saklı tutar.
+      </p>
+      <h2>5. Lig, puan, rozet ve başarı sistemleri</h2>
+      <p>
+        Uygulamadaki ligler, puanlar, rozetler, sıralamalar ve benzeri motivasyon sistemleri kullanıcı deneyimini
+        desteklemek amacıyla sunulur. Arena, bu sistemlerin kurallarını, hesaplama yöntemlerini, sezon yapılarını
+        veya görünürlük ayarlarını zaman içinde değiştirebilir.
+      </p>
+      <p>
+        Hileli kullanım, sahte veri girişi veya sistemi manipüle etmeye yönelik davranışlarda puanlarınız silinebilir,
+        sıralamanız geçersiz sayılabilir veya hesabınız sınırlandırılabilir.
+      </p>
+      <h2>6. Hizmet değişiklikleri</h2>
+      <p>
+        Arena; uygulama özelliklerini, ekranlarını, içeriklerini, puan sistemlerini, lig yapılarını ve teknik altyapısını
+        zaman zaman güncelleyebilir, değiştirebilir, geçici olarak durdurabilir veya kaldırabilir.
+      </p>
+      <p>
+        Uygulamanın kesintisiz, hatasız veya her zaman erişilebilir olacağı garanti edilmez. Teknik bakım, güncelleme,
+        internet bağlantısı, cihaz uyumluluğu veya üçüncü taraf altyapı sorunları nedeniyle hizmette kesintiler yaşanabilir.
+      </p>
+      <h2>7. Ücretli özellikler ve abonelikler</h2>
+      <p>
+        Uygulamada şu anda veya ilerleyen dönemlerde ücretli özellikler, abonelikler veya premium hizmetler sunulabilir.
+        Böyle bir durumda fiyatlar, ödeme koşulları, yenileme ve iptal süreçleri ilgili uygulama mağazasının
+        kuralları ve uygulama içi bilgilendirmeler doğrultusunda kullanıcıya sunulur.
+      </p>
+      <p>
+        Ücretli özellikler devreye alındığında bu Kullanım Şartları ve ilgili bilgilendirme metinleri güncellenebilir.
+      </p>
+      <h2>8. Hesap silme ve sonlandırma</h2>
+      <p>
+        Hesabınızı dilediğiniz zaman uygulama içindeki <strong>Profil &gt; Yasal &gt; Hesabı Sil</strong> bölümünden
+        silebilirsiniz. Hesap silme işlemiyle ilgili detaylar Gizlilik Politikası içinde açıklanır.
+      </p>
+      <p>
+        Bu Kullanım Şartları'nı, topluluk kurallarını veya uygulamanın güvenliğini ihlal etmeniz durumunda Arena;
+        hesabınızı geçici olarak sınırlandırabilir, askıya alabilir veya kalıcı olarak sonlandırabilir.
+      </p>
+      <h2>9. Gizlilik</h2>
+      <p>
+        Kişisel verilerinizin nasıl işlendiği, saklandığı ve korunduğu hakkında detaylı bilgi için
+        <a href="privacy-policy.html">Gizlilik Politikası</a> sayfasını inceleyebilirsiniz.
+      </p>
+      <h2>10. Fikri mülkiyet</h2>
+      <p>
+        Arena uygulamasına ait marka, tasarım, arayüz, logo, yazılım, görsel unsurlar ve içerikler ilgili hak sahiplerine aittir.
+        Bu unsurlar izinsiz kopyalanamaz, çoğaltılamaz, dağıtılamaz veya ticari amaçla kullanılamaz.
+      </p>
+      <h2>11. Sorumluluk sınırı</h2>
+      <p>
+        Arena, uygulamada sunulan çalışma verileri, performans analizleri, puanlar, hedefler ve benzeri bilgilerin
+        her zaman hatasız, eksiksiz veya belirli bir sonucu garanti eder nitelikte olduğunu taahhüt etmez.
+      </p>
+      <p>
+        Uygulamanın kullanımından doğabilecek dolaylı zararlar, veri kayıpları, performans sorunları veya teknik aksaklıklar
+        bakımından, yürürlükteki mevzuatın izin verdiği ölçüde Arena sorumlu tutulamaz.
+      </p>
+      <h2>12. Şartlardaki değişiklikler</h2>
+      <p>
+        Bu Kullanım Şartları zaman zaman güncellenebilir. Güncellenen şartlar bu sayfada yeni tarih belirtilerek yayınlanır.
+        Önemli değişiklikler, uygun görülen durumlarda uygulama içinde veya bu sayfa üzerinden duyurulabilir.
+      </p>
+      <h2>13. İletişim</h2>
+      <div class="contact">
+        <p>
+          Kullanım Şartları ile ilgili sorularınız için:
+          <a href="mailto:destek@kertenkelebek.com">destek@kertenkelebek.com</a>
+        </p>
+      </div>
+      <div class="footer">
+        © 2026 Arena — Tüm hakları saklıdır.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
